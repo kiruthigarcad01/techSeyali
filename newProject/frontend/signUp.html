@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(to bottom right, rgba(255, 0, 150, 0.5), rgba(0, 0, 255, 0.4)), 
+                  url("../public/signup-bg.jpg") no-repeat center center/cover;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #fff;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #999;
+    }
+
+    .checkbox-area {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-area input {
+      margin-right: 10px;
+    }
+
+    .checkbox-area a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    #signupBtn {
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      background: linear-gradient(to right, #ec008c, #fc6767);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #signupBtn:hover {
+      opacity: 0.9;
+    }
+
+    #message {
+      color: green;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .login-link {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .login-link a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="left"></div>
+
+  
+  <div class="right">
+    <div class="form-title">Sign Up</div>
+
+    <input type="text" id="id" placeholder="User ID" required />
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email address" required />
+    <input type="text" id="mobile" placeholder="Mobile Number" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <input type="text" id="otp" placeholder="Enter OTP" required />
+
+    <div class="checkbox-area">
+      <input type="checkbox" id="terms" required />
+      <label for="terms">I agree to the <a href="#">Terms of Use</a></label>
+    </div>
+
+    <button id="signupBtn">Sign Up</button>
+
+    <p id="message"></p>
+
+    <div class="login-link">
+      Already have an account? <a href="login.html">Sign in →</a>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

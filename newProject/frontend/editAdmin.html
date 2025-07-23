@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Admin</title>
+  <style>
+    body {
+      background: #f0f2f5;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #00b894;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #019875;
+    }
+
+    #editAdminMsg {
+      margin-top: 12px;
+      color: green;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-card">
+    <h2>Edit Admin</h2>
+    <input type="text" id="editAdminId" placeholder="Admin ID" />
+
+<input type="text" id="editAdminName" placeholder="Full Name" />
+<input type="email" id="editAdminEmail" placeholder="Email"/>
+<input type="text" id="editAdminMobile" placeholder="Mobile Number" />
+<input type="password" id="editAdminPassword" placeholder="New Password" />
+
+
+    <button id="editAdminBtn">Update Admin</button>
+    <p id="editAdminMsg"></p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

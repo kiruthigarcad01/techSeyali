@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6C2BD9, #8B5CF6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      background: #fff;
+      width: 360px;
+      border-radius: 16px;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #6C2BD9;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #6C2BD9;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    #welcomeMessage {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .continue-btn {
+      background-color: #6C2BD9;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .continue-btn:hover {
+      background-color: #5420ad;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">lemondr<span style="color:#F7C942;">p</span></div>
+    <h1>Welcome!</h1>
+    <div id="welcomeMessage">Loading...</div>
+    <button class="continue-btn">Continue</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

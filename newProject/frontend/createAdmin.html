@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Admin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #6c5ce7;
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #5a4bd8;
+    }
+
+    #adminCreateMsg {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-card">
+    <h2>Create Admin</h2>
+    <input type="text" id="adminId" placeholder="Admin ID" required />
+    <input type="text" id="adminName" placeholder="Full Name" required />
+    <input type="email" id="adminEmail" placeholder="Email Address" required />
+    <input type="text" id="adminMobile" placeholder="Mobile Number" required />
+    <input type="password" id="adminPassword" placeholder="Password" required />
+    <button id="createAdminBtn">Create Admin</button>
+
+    <p id="adminCreateMsg"></p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
